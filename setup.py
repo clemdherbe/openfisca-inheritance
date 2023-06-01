@@ -1,27 +1,5 @@
 #! /usr/bin/env python
-# -*- coding: utf-8 -*-
 
-
-# OpenFisca -- A versatile microsimulation software
-# By: OpenFisca Team <contact@openfisca.fr>
-#
-# Copyright (C) 2011, 2012, 2013, 2014, 2015 OpenFisca Team
-# https://github.com/openfisca
-#
-# This file is part of OpenFisca.
-#
-# OpenFisca is free software; you can redistribute it and/or modify
-# it under the terms of the GNU Affero General Public License as
-# published by the Free Software Foundation, either version 3 of the
-# License, or (at your option) any later version.
-#
-# OpenFisca is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Affero General Public License for more details.
-#
-# You should have received a copy of the GNU Affero General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 """Inheritance specific model for OpenFisca -- a versatile microsimulation free software"""
@@ -44,7 +22,6 @@ doc_lines = __doc__.split('\n')
 setup(
     name = 'OpenFisca-Inheritance',
     version = '0.4dev',
-
     author = 'OpenFisca Team',
     author_email = 'contact@openfisca.fr',
     classifiers = [classifier for classifier in classifiers.split('\n') if classifier],
@@ -55,9 +32,7 @@ setup(
     url = 'https://github.com/openfisca/openfisca-inheritance',
 
     install_requires = [
-        'Biryani1[datetimeconv] >= 0.9dev',
-        'numpy',
-        'OpenFisca-Core >= 0.4dev',
+        'OpenFisca-Core @ git+https://github.com/openfisca/openfisca-core.git@version_leap',
         ],
     packages = find_packages(),
     zip_safe = False,
